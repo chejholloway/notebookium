@@ -1,0 +1,15 @@
+<ul class="list-inline container-fluid avatar-row">
+  <li class="list-inline-item">
+    <img
+      class="expert-avatar text-left"
+      src="{{ expert.profile.avatar.url | decodeURIComponent }}"
+      alt="{{ expert.profile.firstname }} {{ expert.profile.lastname }}"
+    />
+  </li>
+  <li class="list-inline-item pull-right">
+    <span class="standard-title">
+      {{ expert.profile.firstname }}
+      {{ expert.profile.lastname }}
+    </span>
+  </li>
+</ul>

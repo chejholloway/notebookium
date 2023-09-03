@@ -1,0 +1,87 @@
+.expert-card {
+  background-color: #fff;
+  border-radius: 2px;
+  box-shadow: 0 1px 3px 0 rgba(28, 36, 58, 0.1),
+    0 1px 1px 0 rgba(28, 36, 58, 0.07), 0 2px 1px -1px rgba(28, 36, 58, 0.06);
+  overflow: hidden;
+  transition: box-shadow 0.3s ease;
+  width: 100%;
+  white-space: normal;
+  max-width: 600px;
+}
+
+a:hover {
+  color: rgba(28, 36, 58, 0.64);
+  text-decoration: none;
+}
+
+a {
+  transition: color 0.2s ease;
+  color: #1b64ac;
+  text-decoration: none;
+}
+
+mat-card-header {
+  max-height: 0;
+  overflow: hidden;
+  transition-timing-function: ease-out;
+  -webkit-transition: max-height 0.5s;
+  -moz-transition: max-height 0.5s;
+  transition: max-height 0.5s;
+  background: white;
+}
+
+.card:hover mat-card-header {
+  max-height: 5rem;
+  transition-timing-function: ease-in;
+  -webkit-transition: max-height 0.5s;
+  -moz-transition: max-height 0.5s;
+  transition: max-height 0.5s;
+}
+
+.mat-card {
+  height: 100%;
+}
+
+.mat-card-image:hover {
+  height: 100%;
+  cursor: zoom-in;
+}
+
+mat-card-footer {
+  margin: 0;
+}
+
+cdk-virtual-scroll-viewport {
+  height: 100vh;
+}
+
+/**
+ *ANIMATIONS
+ */
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.fadeInUp {
+  -webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp;
+}
+
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}

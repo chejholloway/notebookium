@@ -1,0 +1,23 @@
+.avatar-row {
+  z-index: 5;
+  background: white;
+  height: auto;
+}
+
+.expert-avatar {
+  height: 32px;
+  width: 32px;
+  min-width: 32px;
+  margin-right: 8px;
+  border-radius: 50%;
+}
+
+span.standard-title {
+  font-family: proxima-nova, helvetica, arial, sans-serif;
+  font-style: normal;
+  font-size: 13px;
+  line-height: 20px;
+  letter-spacing: 0.1px;
+  font-weight: 600;
+  min-height: 3rem;
+}

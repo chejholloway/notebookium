@@ -1,0 +1,12 @@
+.mat-card-image {
+  width: calc(100% + 32px);
+  margin: -16px;
+  max-height: 8rem;
+  min-height: 8rem;
+  padding-bottom: 1.5rem;
+  padding-top: 1rem;
+}
+
+img:hover {
+  cursor: zoom-in;
+}

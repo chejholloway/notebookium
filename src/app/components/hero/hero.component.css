@@ -1,0 +1,6 @@
+.hero {
+  min-height: 128px;
+  padding: 24px 0 24px 280px;
+  background: linear-gradient(90deg, #2179cf, #09ddbb);
+  color: white;
+}

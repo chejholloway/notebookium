@@ -1,0 +1,26 @@
+<cdk-virtual-scroll-viewport itemSize="100">
+  <mat-grid-list
+    #grid
+    [cols]="cols | async"
+    rowHeight="1:1"
+    gutterSize="10px"
+    class="pt-5"
+  >
+    <mat-grid-tile *cdkVirtualFor="let expert of dataSource">
+      <mat-card *ngIf="expert" class="example-card card mb-4 animated fadeInUp">
+        <mat-card-header>
+          <mat-card-title>
+            <app-avatar [expert]="expert"></app-avatar>
+          </mat-card-title>
+        </mat-card-header>
+        <app-cover-pic [expert]="expert"></app-cover-pic>
+        <mat-card-content>
+          <app-content [expert]="expert"></app-content>
+        </mat-card-content>
+      </mat-card>
+    </mat-grid-tile>
+  </mat-grid-list>
+  <div *ngIf="!expert">
+    <app-loading-spinner></app-loading-spinner>
+  </div>
+</cdk-virtual-scroll-viewport>

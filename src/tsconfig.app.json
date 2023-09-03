@@ -1,0 +1,17 @@
+{
+  "extends": "../tsconfig.json",
+  "compilerOptions": {
+    "outDir": "../out-tsc/app",
+    "module": "es2015",
+    "types": []
+  },
+  "angularCompilerOptions": {
+    "enableIvy": true
+  },
+  "exclude": [
+    "**/*.spec.ts",
+    "./jestGlobalMocks.ts",
+    "./setup-jest.ts",
+    "./app/mocks/expertMock.ts"
+  ]
+}

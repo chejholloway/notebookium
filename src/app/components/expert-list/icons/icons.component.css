@@ -1,0 +1,30 @@
+mat-icon.heart-outline {
+  position: relative;
+  right: 0rem;
+}
+
+mat-icon.share-variant {
+  left: 11rem;
+}
+
+.heart-outline,
+.share-variant {
+  position: relative !important;
+  color: rgba(0, 0, 0, 0.54);
+}
+
+.heart-outline:hover,
+.share-variant:hover {
+  cursor: pointer;
+}
+
+.likes {
+  font-family: proxima-nova, helvetica, arial, sans-serif;
+  font-style: normal;
+  line-height: 20px;
+  letter-spacing: 0.1px;
+  font-size: 14px;
+  font-weight: 600;
+  color: rgba(28, 36, 58, 0.64);
+  margin-left: -6px;
+}
